@@ -22,6 +22,11 @@
   <servlet>
   		<servlet-name>servlet3</servlet-name>
   		<servlet-class>com.amrita.MyServlet</servlet-class>
+  		
+  		<init-param>
+  		 <param-name>name</param-name>
+  		 <param-value>Amrita</param-value>
+  		</init-param>
   </servlet>
   <servlet-mapping>
   		<servlet-name>servlet3</servlet-name>

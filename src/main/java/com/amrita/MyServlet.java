@@ -3,6 +3,7 @@ package com.amrita;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +17,7 @@ public class MyServlet extends HttpServlet {
 		PrintWriter out = res.getWriter();
 		out.print("Hi ");
 		
-		ServletContext ctx = getServletContext();
+		ServletConfig ctx = getServletConfig();
 		String str = ctx.getInitParameter("name");
 		out.print(str);
 	}
